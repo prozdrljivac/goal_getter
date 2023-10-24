@@ -3,7 +3,7 @@ import goals from "../utils/dummy-goals.json";
 
 export const GoalListPage = () => {
   return (
-    <div className="m-auto w-[500px]">
+    <div className="m-auto w-[500px] h-screen overflow-auto">
       {goals.data.map((goal) => (
         <Goal
           key={goal.id}
