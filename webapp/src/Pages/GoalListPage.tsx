@@ -8,12 +8,9 @@ export const GoalListPage = () => {
       <main>
         <div className="m-auto w-[500px]">
           {goals.data.map((goal) => (
-            <Goal
-              key={goal.id}
-              title={goal.title}
-              description={goal.description}
-              date={new Date(goal.date)}
-            />
+            <Goal key={goal.id} title={goal.title} date={new Date(goal.date)}>
+              <p>{goal.description}</p>
+            </Goal>
           ))}
         </div>
       </main>

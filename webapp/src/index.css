@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Check if you can pull this color from tailwind here -> slate 500 */
   background-color: rgb(100 116 139 / 1);
 }
 
