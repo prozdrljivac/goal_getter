@@ -8,5 +8,4 @@ export type GoalRequest = {
 export type GoalInput = {
   title: string;
   description: string;
-  date: string;
 };
