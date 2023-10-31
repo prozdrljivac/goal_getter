@@ -1,12 +1,10 @@
 import { useState } from "react";
 
-import dummyGoals from "./utils/dummy-goals.json";
-import { type GoalRequest, type GoalInput as GInput } from "./types";
-import { GoalList } from "./components/GoalList/GoalList";
-import { GoalInput } from "./components/GoalInput/GoalInput";
+import { type Goal, type GoalInput as GInput } from "./types";
+import { GoalInput, GoalList } from "./components";
 
 export const App = () => {
-  const [goals, setGoals] = useState<GoalRequest[]>(dummyGoals["data"]);
+  const [goals, setGoals] = useState<Goal[]>([]);
 
   const handleGoalDelete = (id: number) => {
     setGoals((prevGoals) => prevGoals.filter((goal) => goal.id !== id));
@@ -34,5 +32,3 @@ export const App = () => {
     </>
   );
 };
-
-export default App;

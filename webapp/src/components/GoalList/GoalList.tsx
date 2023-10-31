@@ -1,9 +1,9 @@
-import { FC } from "react";
-import { Goal } from "../Goal/Goal";
-import { type GoalRequest } from "../../types";
+import { type FC } from "react";
+import { Goal } from "../../components";
+import { type Goal as TGoal } from "../../types";
 
 type GoalListProps = {
-  goals: GoalRequest[];
+  goals: TGoal[];
   onGoalDelete: (id: number) => void;
 };
 

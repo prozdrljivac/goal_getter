@@ -1,4 +1,4 @@
-export type GoalRequest = {
+export type Goal = {
   id: number;
   title: string;
   description: string;
