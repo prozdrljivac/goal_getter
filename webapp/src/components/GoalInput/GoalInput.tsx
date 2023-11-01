@@ -29,10 +29,7 @@ export const GoalInput: FC<GoalInputProps> = ({ onGoalSave }) => {
   };
 
   return (
-    <form
-      className="p-8 flex-col items-start border rounded"
-      onSubmit={handleGoalSubmit}
-    >
+    <form className="flex-col items-start" onSubmit={handleGoalSubmit}>
       <label className="mb-4 font-bold" htmlFor="title">
         Title
       </label>
